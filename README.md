@@ -1,6 +1,6 @@
 # Sistema de Gestão de Biblioteca
 ![Language](https://img.shields.io/badge/Python-3.13-blue.svg)
-![Status](https://img.shields.io/badge/Status-Projeto%20Académico-brightgreen)
+![Status](https://img.shields.io/badge/Status-Projeto%20Escolar-brightgreen)
 
 Um sistema de gestão de biblioteca desenvolvido em Python como parte da disciplina de Programação de Sistemas de Informação. A aplicação permite o cadastro de livros e alunos, a criação de relatórios, o controlo de empréstimos e devoluções. Todos os dados são guardados em ficheiros JSON, garantindo que a informação não se perde entre sessões.
 ## 🎯 Objetivo Principal
