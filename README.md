@@ -16,24 +16,24 @@ A gestão manual de uma biblioteca, mesmo que pequena, é suscetível a erros e 
 
 ## ✔️ A Solução
 Foi desenvolvido um sistema de linha de comando (CLI) com uma arquitetura modular clara, onde cada classe tem uma responsabilidade bem definida:
-1.  **Modelo de Dados (`Livro`, `Aluno`):**
+-  **Modelo de Dados (`Livro`, `Aluno`):**
     - Classes simples que representam as entidades fundamentais do sistema.
     - O `Livro` controla o seu próprio estado de disponibilidade (`disponivel`).
     - O `Aluno` mantém uma lista dos livros que tem em sua posse.
 
-2.  **Orquestrador Central (`Biblioteca`):**
+-  **Orquestrador Central (`Biblioteca`):**
     - Armazena as listas de todos os livros e alunos.
     - Centraliza a lógica de negócio, como validar se um livro pode ser emprestado ou se um aluno já está registado.
 
-3.  **Persistência de Dados (`Biblioteca_JSON`):**
+-  **Persistência de Dados (`Biblioteca_JSON`):**
     - Uma classe dedicada a salvar e carregar o estado completo da classe `Biblioteca`.
     - Utiliza o formato JSON para serializar todos os objetos (livros, alunos e suas relações) num único ficheiro, garantindo a integridade dos dados entre execuções.
 
-4.  **Geração de Relatórios (`Relatorio`):**
+-  **Geração de Relatórios (`Relatorio`):**
     - Responsável por agregar e formatar os dados da biblioteca num formato de texto legível.
     - Permite ao utilizador escolher quais secções (livros, alunos, empréstimos) devem ser incluídas no relatório final.
 
-5.  **Interface de Utilizador (`Console_Biblioteca`):**
+-  **Interface de Utilizador (`Console_Biblioteca`):**
     - Implementa um menu interativo no terminal.
     - Guia o utilizador através de opções numeradas para aceder a todas as funcionalidades do sistema, como cadastrar, emprestar, devolver e gerar relatórios.
 
